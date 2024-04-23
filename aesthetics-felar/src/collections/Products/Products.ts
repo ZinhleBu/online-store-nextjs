@@ -96,7 +96,7 @@ export const Products: CollectionConfig = {
           const createdProduct = await stripe.products.create({
             name: data.name,
             default_price_data: {
-              currency: "ZAR",
+              currency: "USD",
               unit_amount: Math.round(data.price * 100),
             },
           });
@@ -151,7 +151,7 @@ export const Products: CollectionConfig = {
     },
     {
       name: "price",
-      label: "Price in ZAR",
+      label: "Price in USD",
       min: 0,
       max: 2000000,
       type: "number",

@@ -50,7 +50,7 @@ export interface Product {
   name: string;
   description?: string | null;
   price: number;
-  category: 'iphones' | 'macbooks';
+  category: 'iphones' | 'macbooks' | 'imac' | 'ipads' | 'airpods' | 'chargers';
   product_files: string | ProductFile;
   approvedForSale?: ('pending' | 'approved' | 'denied') | null;
   priceId?: string | null;
