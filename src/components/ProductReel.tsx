@@ -2,7 +2,7 @@
 
 "use client";
 
-import { TQueryValidator } from "..//lib/validators/query-validators";
+import { TQueryValidator } from "../lib/validators/query-validators";
 import { Product } from "@/payload-types";
 import { trpc } from "@/trpc/client";
 import Link from "next/link";
